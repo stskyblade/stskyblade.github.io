@@ -71,7 +71,7 @@ deploy:
   type: git
   repo: git@github.com:stskyblade/stskyblade.github.io.git
   branch: master
-  message: '站点更新:{{now("YYYY-MM-DD HH/mm/ss")}}'
+  message: '站点更新:{{now("YYYY-MM-DD HH:mm:ss")}}'
 
 avatar: /uploads/stskyblade.jpg
 
