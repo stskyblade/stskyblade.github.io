@@ -1,0 +1,765 @@
+[1mdiff --git a/themes/next/_config.yml b/themes/next/_config.yml[m
+[1mindex b4c9cd9..479f1eb 100755[m
+[1m--- a/themes/next/_config.yml[m
+[1m+++ b/themes/next/_config.yml[m
+[36m@@ -1,9 +1,38 @@[m
+[32m+[m[32m# ===============================================================[m
+[32m+[m[32m# ========================= ATTENTION! ==========================[m
+[32m+[m[32m# ===============================================================[m
+[32m+[m[32m# NexT repository is moving here: https://github.com/theme-next[m
+[32m+[m[32m# ===============================================================[m
+[32m+[m[32m# It's rebase to v6.0.0 and future maintenance will resume there[m
+[32m+[m[32m# ===============================================================[m
+[32m+[m
+[32m+[m[32m# ---------------------------------------------------------------[m
+[32m+[m[32m# Theme Core Configuration Settings[m
+[32m+[m[32m# ---------------------------------------------------------------[m
+[32m+[m
+[32m+[m[32m# Set to true, if you want to fully override the default configuration.[m
+[32m+[m[32m# Useful if you don't want to inherit the theme _config.yml configurations.[m
+[32m+[m[32moverride: false[m
+[32m+[m
+ # ---------------------------------------------------------------[m
+ # Site Information Settings[m
+ # ---------------------------------------------------------------[m
+ [m
+[31m-# Put your favicon.ico into `hexo-site/source/` directory.[m
+[31m-favicon: /favicon.ico[m
+[32m+[m[32m# To get or check favicons visit: https://realfavicongenerator.net[m
+[32m+[m[32m# Put your favicons into `hexo-site/source/` (recommend) or `hexo-site/themes/next/source/images/` directory.[m
+[32m+[m
+[32m+[m[32m# Default NexT favicons placed in `hexo-site/themes/next/source/images/` directory.[m
+[32m+[m[32m# And if you want to place your icons in `hexo-site/source/` root directory, you must remove `/images` prefix from pathes.[m
+[32m+[m
+[32m+[m[32m# For example, you put your favicons into `hexo-site/source/images` directory.[m
+[32m+[m[32m# Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.[m
+[32m+[m[32mfavicon:[m
+[32m+[m[32m  small: /images/favicon-16x16-next.png[m
+[32m+[m[32m  medium: /images/favicon-32x32-next.png[m
+[32m+[m[32m  apple_touch_icon: /images/apple-touch-icon-next.png[m
+[32m+[m[32m  safari_pinned_tab: /images/logo.svg[m
+[32m+[m[32m  #android_manifest: /images/manifest.json[m
+[32m+[m[32m  #ms_browserconfig: /images/browserconfig.xml[m
+ [m
+ # Set default keywords (Use a comma to separate)[m
+ keywords: "Hexo, NexT"[m
+[36m@@ -11,16 +40,30 @@[m [mkeywords: "Hexo, NexT"[m
+ # Set rss to false to disable feed link.[m
+ # Leave rss as empty to use site's feed link.[m
+ # Set rss to specific value if you have burned your feed already.[m
+[31m-rss: false[m
+[31m-[m
+[31m-# Specify the date when the site was setup[m
+[31m-#since: 2015[m
+[31m-[m
+[31m-# icon between year and author @Footer[m
+[31m-authoricon: heart[m
+[31m-[m
+[31m-# Footer `powered-by` and `theme-info` copyright[m
+[31m-copyright: true[m
+[32m+[m[32mrss:[m
+[32m+[m
+[32m+[m[32mfooter:[m
+[32m+[m[32m  # Specify the date when the site was setup.[m
+[32m+[m[32m  # If not defined, current year will be used.[m
+[32m+[m[32m  #since: 2015[m
+[32m+[m
+[32m+[m[32m  # Icon between year and copyright info.[m
+[32m+[m[32m  icon: user[m
+[32m+[m
+[32m+[m[32m  # If not defined, will be used `author` from Hexo main config.[m
+[32m+[m[32m  copyright:[m
+[32m+[m[32m  # -------------------------------------------------------------[m
+[32m+[m[32m  # Hexo link (Powered by Hexo).[m
+[32m+[m[32m  powered: true[m
+[32m+[m
+[32m+[m[32m  theme:[m
+[32m+[m[32m    # Theme & scheme info link (Theme - NexT.scheme).[m
+[32m+[m[32m    enable: true[m
+[32m+[m[32m    # Version info of NexT after scheme info (vX.X.X).[m
+[32m+[m[32m    version: true[m
+[32m+[m[32m  # -------------------------------------------------------------[m
+[32m+[m[32m  # Any custom text can be defined here.[m
+[32m+[m[32m  #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>[m
+ [m
+ # ---------------------------------------------------------------[m
+ # SEO Settings[m
+[36m@@ -38,39 +81,29 @@[m [mseo: false[m
+ # subtitle: Subtitle[m
+ index_with_subtitle: false[m
+ [m
+[32m+[m
+ # ---------------------------------------------------------------[m
+ # Menu Settings[m
+ # ---------------------------------------------------------------[m
+ [m
+[31m-# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)[m
+[32m+[m[32m# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).[m
+[32m+[m[32m# Usage: `Key: /link/ || icon`[m
+[32m+[m[32m# Key is the name of menu item. If translate for this menu will find in languages - this translate will be loaded; if not - Key name will be used. Key is case-senstive.[m
+[32m+[m[32m# Value before `||` delimeter is the target link.[m
+[32m+[m[32m# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.[m
+ menu:[m
+[31m-  home: /[m
+[31m-  categories: /categories/[m
+[31m-  tags: /tags/[m
+[31m-  about: /about/[m
+[31m-  # archives: /archives/[m
+[31m-  #sitemap: /sitemap.xml[m
+[31m-  #commonweal: /404.html[m
+[31m-[m
+[32m+[m[32m  home: / || home[m
+[32m+[m[32m  #about: /about/ || user[m
+[32m+[m[32m  #tags: /tags/ || tags[m
+[32m+[m[32m  #categories: /categories/ || th[m
+[32m+[m[32m  archives: /archives/ || archive[m
+[32m+[m[32m  #schedule: /schedule/ || calendar[m
+[32m+[m[32m  #sitemap: /sitemap.xml || sitemap[m
+[32m+[m[32m  #commonweal: /404/ || heartbeat[m
+ [m
+ # Enable/Disable menu icons.[m
+[31m-# Icon Mapping:[m
+[31m-#   Map a menu item to a specific FontAwesome icon name.[m
+[31m-#   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.[m
+[31m-#   When an question mask icon presenting up means that the item has no mapping icon.[m
+ menu_icons:[m
+   enable: true[m
+[31m-  #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome[m
+[31m-  home: home[m
+[31m-  about: user[m
+[31m-  categories: th[m
+[31m-  schedule: calendar[m
+[31m-  tags: tags[m
+[31m-  archives: archive[m
+[31m-  sitemap: sitemap[m
+[31m-  commonweal: heartbeat[m
+[31m-[m
+[31m-[m
+ [m
+ [m
+ # ---------------------------------------------------------------[m
+[36m@@ -78,91 +111,50 @@[m [mmenu_icons:[m
+ # ---------------------------------------------------------------[m
+ [m
+ # Schemes[m
+[31m-# scheme: Muse[m
+[31m-scheme: Mist[m
+[32m+[m[32mscheme: Muse[m
+[32m+[m[32m#scheme: Mist[m
+ #scheme: Pisces[m
+[31m-[m
+[31m-[m
+[31m-# ---------------------------------------------------------------[m
+[31m-# Font Settings[m
+[31m-# - Find fonts on Google Fonts (https://www.google.com/fonts)[m
+[31m-# - All fonts set here will have the following styles:[m
+[31m-#     light, light italic, normal, normal italic, bold, bold italic[m
+[31m-# - Be aware that setting too much fonts will cause site running slowly[m
+[31m-# - Introduce in 5.0.1[m
+[31m-# ---------------------------------------------------------------[m
+[31m-font:[m
+[31m-  enable: true[m
+[31m-[m
+[31m-  # Uri of fonts host. E.g. //fonts.googleapis.com (Default)[m
+[31m-  host:[m
+[31m-[m
+[31m-  # Global font settings used on <body> element.[m
+[31m-  global:[m
+[31m-    # external: true will load this font family from host.[m
+[31m-    external: true[m
+[31m-    family: Lato[m
+[31m-[m
+[31m-  # Font settings for Headlines (h1, h2, h3, h4, h5, h6)[m
+[31m-  # Fallback to `global` font settings.[m
+[31m-  headings:[m
+[31m-    external: true[m
+[31m-    family:[m
+[31m-[m
+[31m-  # Font settings for posts[m
+[31m-  # Fallback to `global` font settings.[m
+[31m-  posts:[m
+[31m-    external: true[m
+[31m-    family:[m
+[31m-[m
+[31m-  # Font settings for Logo[m
+[31m-  # Fallback to `global` font settings.[m
+[31m-  # The `size` option use `px` as unit[m
+[31m-  logo:[m
+[31m-    external: true[m
+[31m-    family:[m
+[31m-    size:[m
+[31m-[m
+[31m-  # Font settings for <code> and code blocks.[m
+[31m-  codes:[m
+[31m-    external: true[m
+[31m-    family:[m
+[31m-    size:[m
+[31m-[m
+[31m-[m
+[32m+[m[32m#scheme: Gemini[m
+ [m
+ [m
+ # ---------------------------------------------------------------[m
+ # Sidebar Settings[m
+ # ---------------------------------------------------------------[m
+ [m
+[31m-[m
+[31m-# Social Links[m
+[32m+[m[32m# Social Links.[m
+[32m+[m[32m# Usage: `Key: permalink || icon`[m
+ # Key is the link label showing to end users.[m
+[31m-# Value is the target link (E.g. GitHub: https://github.com/iissnan)[m
+[32m+[m[32m# Value before `||` delimeter is the target permalink.[m
+[32m+[m[32m# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.[m
+ #social:[m
+[31m-  #LinkLabel: Link[m
+[32m+[m[32m  #GitHub: https://github.com/yourname || github[m
+[32m+[m[32m  #E-Mail: mailto:yourname@gmail.com || envelope[m
+[32m+[m[32m  #Google: https://plus.google.com/yourname || google[m
+[32m+[m[32m  #Twitter: https://twitter.com/yourname || twitter[m
+[32m+[m[32m  #FB Page: https://www.facebook.com/yourname || facebook[m
+[32m+[m[32m  #VK Group: https://vk.com/yourname || vk[m
+[32m+[m[32m  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow[m
+[32m+[m[32m  #YouTube: https://youtube.com/yourname || youtube[m
+[32m+[m[32m  #Instagram: https://instagram.com/yourname || instagram[m
+[32m+[m[32m  #Skype: skype:yourname?call|chat || skype[m
+ [m
+[31m-[m
+[31m-# Social Links Icons[m
+[31m-# Icon Mapping:[m
+[31m-#   Map a menu item to a specific FontAwesome icon name.[m
+[31m-#   Key is the name of the item and value is the name of FontAwesome icon. Key is case-senstive.[m
+[31m-#   When an globe mask icon presenting up means that the item has no mapping icon.[m
+ social_icons:[m
+   enable: true[m
+[31m-  # Icon Mappings.[m
+[31m-  # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome[m
+[31m-  GitHub: github[m
+[31m-  Twitter: twitter[m
+[31m-  Weibo: weibo[m
+[32m+[m[32m  icons_only: false[m
+[32m+[m[32m  transition: false[m
+ [m
+[32m+[m[32m# Blog rolls[m
+[32m+[m[32mlinks_icon: link[m
+[32m+[m[32mlinks_title: Links[m
+[32m+[m[32mlinks_layout: block[m
+[32m+[m[32m#links_layout: inline[m
+[32m+[m[32m#links:[m
+[32m+[m[32m  #Title: http://example.com/[m
+ [m
+ # Sidebar Avatar[m
+[31m-# in theme directory(source/images): /images/avatar.jpg[m
+[31m-# in site  directory(source/uploads): /uploads/avatar.jpg[m
+[31m-#avatar:[m
+[31m-[m
+[32m+[m[32m# in theme directory(source/images): /images/avatar.gif[m
+[32m+[m[32m# in site  directory(source/uploads): /uploads/avatar.gif[m
+[32m+[m[32m#avatar: /images/avatar.gif[m
+ [m
+ # Table Of Contents in the Sidebar[m
+ toc:[m
+[36m@@ -173,7 +165,6 @@[m [mtoc:[m
+ [m
+   # If true, all words will placed on next lines if header width longer then sidebar width.[m
+   wrap: false[m
+[31m-  [m
+ [m
+ # Creative Commons 4.0 International License.[m
+ # http://creativecommons.org/[m
+[36m@@ -181,39 +172,32 @@[m [mtoc:[m
+ #creative_commons: by-nc-sa[m
+ #creative_commons:[m
+ [m
+[31m-[m
+ sidebar:[m
+[31m-  # Sidebar Position, available value: left | right[m
+[32m+[m[32m  # Sidebar Position, available value: left | right (only for Pisces | Gemini).[m
+   position: left[m
+   #position: right[m
+ [m
+[31m-  # Sidebar Display, available value:[m
+[32m+[m[32m  # Sidebar Display, available value (only for Muse | Mist):[m
+   #  - post    expand on posts automatically. Default.[m
+   #  - always  expand for all pages automatically[m
+   #  - hide    expand only when click on the sidebar toggle icon.[m
+   #  - remove  Totally remove sidebar including sidebar toggle.[m
+[31m-  # display: post[m
+[32m+[m[32m  display: post[m
+   #display: always[m
+[31m-  display: hide[m
+[32m+[m[32m  #display: hide[m
+   #display: remove[m
+ [m
+[31m-  # Sidebar offset from top menubar in pixels.[m
+[32m+[m[32m  # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).[m
+   offset: 12[m
+[31m-  offset_float: 0[m
+ [m
+[31m-  # Back to top in sidebar[m
+[32m+[m[32m  # Back to top in sidebar (only for Pisces | Gemini).[m
+   b2t: false[m
+ [m
+[31m-  # Scroll percent label in b2t button[m
+[32m+[m[32m  # Scroll percent label in b2t button.[m
+   scrollpercent: false[m
+ [m
+[31m-[m
+[31m-# Blog rolls[m
+[31m-#links_title: Links[m
+[31m-#links_layout: block[m
+[31m-#links_layout: inline[m
+[31m-#links:[m
+[31m-  #Title: http://example.com/[m
+[32m+[m[32m  # Enable sidebar on narrow view (only for Muse | Mist).[m
+[32m+[m[32m  onmobile: false[m
+ [m
+ [m
+ # ---------------------------------------------------------------[m
+[36m@@ -248,6 +232,7 @@[m [mpost_wordcount:[m
+   item_text: true[m
+   wordcount: false[m
+   min2read: false[m
+[32m+[m[32m  totalcount: false[m
+   separated_meta: true[m
+ [m
+ # Wechat Subscriber[m
+[36m@@ -256,6 +241,12 @@[m [mpost_wordcount:[m
+   #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg[m
+   #description: ex. subscribe to my blog by scanning my public wechat account[m
+ [m
+[32m+[m[32m# Reward[m
+[32m+[m[32m#reward_comment: Donate comment here[m
+[32m+[m[32m#wechatpay: /images/wechatpay.jpg[m
+[32m+[m[32m#alipay: /images/alipay.jpg[m
+[32m+[m[32m#bitcoin: /images/bitcoin.png[m
+[32m+[m
+ # Declare license on posts[m
+ post_copyright:[m
+   enable: false[m
+[36m@@ -263,11 +254,16 @@[m [mpost_copyright:[m
+   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/[m
+ [m
+ [m
+[31m-[m
+ # ---------------------------------------------------------------[m
+ # Misc Theme Settings[m
+ # ---------------------------------------------------------------[m
+ [m
+[32m+[m[32m# Reduce padding / margin indents on devices with narrow width.[m
+[32m+[m[32mmobile_layout_economy: false[m
+[32m+[m
+[32m+[m[32m# Android Chrome header panel color ($black-deep).[m
+[32m+[m[32mandroid_chrome_color: "#222"[m
+[32m+[m
+ # Custom Logo.[m
+ # !!Only available for Default Scheme currently.[m
+ # Options:[m
+[36m@@ -277,12 +273,67 @@[m [mcustom_logo:[m
+   enabled: false[m
+   image:[m
+ [m
+[31m-[m
+ # Code Highlight theme[m
+ # Available value:[m
+ #    normal | night | night eighties | night blue | night bright[m
+ # https://github.com/chriskempson/tomorrow-theme[m
+[31m-highlight_theme: night eighties[m
+[32m+[m[32mhighlight_theme: normal[m
+[32m+[m
+[32m+[m
+[32m+[m[32m# ---------------------------------------------------------------[m
+[32m+[m[32m# Font Settings[m
+[32m+[m[32m# - Find fonts on Google Fonts (https://www.google.com/fonts)[m
+[32m+[m[32m# - All fonts set here will have the following styles:[m
+[32m+[m[32m#     light, light italic, normal, normal italic, bold, bold italic[m
+[32m+[m[32m# - Be aware that setting too much fonts will cause site running slowly[m
+[32m+[m[32m# - Introduce in 5.0.1[m
+[32m+[m[32m# ---------------------------------------------------------------[m
+[32m+[m[32m# CAUTION! Safari Version 10.1.2 bug: https://github.com/iissnan/hexo-theme-next/issues/1844[m
+[32m+[m[32m# To avoid space between header and sidebar in Pisces / Gemini themes recommended to use Web Safe fonts for `global` (and `logo`):[m
+[32m+[m[32m# Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS[m
+[32m+[m[32m# ---------------------------------------------------------------[m
+[32m+[m[32mfont:[m
+[32m+[m[32m  enable: false[m
+[32m+[m
+[32m+[m[32m  # Uri of fonts host. E.g. //fonts.googleapis.com (Default).[m
+[32m+[m[32m  host:[m
+[32m+[m
+[32m+[m[32m  # Font options:[m
+[32m+[m[32m  # `external: true` will load this font family from `host` above.[m
+[32m+[m[32m  # `family: Times New Roman`. Without any quotes.[m
+[32m+[m[32m  # `size: xx`. Use `px` as unit.[m
+[32m+[m
+[32m+[m[32m  # Global font settings used on <body> element.[m
+[32m+[m[32m  global:[m
+[32m+[m[32m    external: true[m
+[32m+[m[32m    family: Lato[m
+[32m+[m[32m    size:[m
+[32m+[m
+[32m+[m[32m  # Font settings for Headlines (h1, h2, h3, h4, h5, h6).[m
+[32m+[m[32m  # Fallback to `global` font settings.[m
+[32m+[m[32m  headings:[m
+[32m+[m[32m    external: true[m
+[32m+[m[32m    family:[m
+[32m+[m[32m    size:[m
+[32m+[m
+[32m+[m[32m  # Font settings for posts.[m
+[32m+[m[32m  # Fallback to `global` font settings.[m
+[32m+[m[32m  posts:[m
+[32m+[m[32m    external: true[m
+[32m+[m[32m    family:[m
+[32m+[m
+[32m+[m[32m  # Font settings for Logo.[m
+[32m+[m[32m  # Fallback to `global` font settings.[m
+[32m+[m[32m  logo:[m
+[32m+[m[32m    external: true[m
+[32m+[m[32m    family:[m
+[32m+[m[32m    size:[m
+[32m+[m
+[32m+[m[32m  # Font settings for <code> and code blocks.[m
+[32m+[m[32m  codes:[m
+[32m+[m[32m    external: true[m
+[32m+[m[32m    family:[m
+[32m+[m[32m    size:[m
+ [m
+ [m
+ # ---------------------------------------------------------------[m
+[36m@@ -309,22 +360,35 @@[m [mhan: false[m
+ [m
+ # Disqus[m
+ disqus:[m
+[31m-  enable: true[m
+[31m-  shortname: stskyblade[m
+[32m+[m[32m  enable: false[m
+[32m+[m[32m  shortname:[m
+   count: true[m
+ [m
+ # Hypercomments[m
+ #hypercomments_id:[m
+ [m
+[31m-# Gentie productKey[m
+[31m-#gentie_productKey:[m
+[31m-[m
+ # changyan[m
+ changyan:[m
+   enable: false[m
+   appid:[m
+   appkey:[m
+ [m
+[32m+[m
+[32m+[m[32m# Valine.[m
+[32m+[m[32m# You can get your appid and appkey from https://leancloud.cn[m
+[32m+[m[32m# more info please open https://valine.js.org[m
+[32m+[m[32mvaline:[m
+[32m+[m[32m  enable: false[m
+[32m+[m[32m  appid:  # your leancloud application appid[m
+[32m+[m[32m  appkey:  # your leancloud application appkey[m
+[32m+[m[32m  notify: false # mail notifier , https://github.com/xCss/Valine/wiki[m
+[32m+[m[32m  verify: false # Verification code[m
+[32m+[m[32m  placeholder: Just go go # comment box placeholder[m
+[32m+[m[32m  avatar: mm # gravatar style[m
+[32m+[m[32m  guest_info: nick,mail,link # custom comment header[m
+[32m+[m[32m  pageSize: 10 # pagination size[m
+[32m+[m
+[32m+[m
+ # Support for youyan comments system.[m
+ # You can get your uid from http://www.uyan.cc[m
+ #youyan_uid: your uid[m
+[36m@@ -333,6 +397,23 @@[m [mchangyan:[m
+ # You can get your uid from https://livere.com/insight/myCode (General web site)[m
+ #livere_uid: your uid[m
+ [m
+[32m+[m[32m# Gitment[m
+[32m+[m[32m# Introduction: https://imsun.net/posts/gitment-introduction/[m
+[32m+[m[32m# You can get your Github ID from https://api.github.com/users/<Github username>[m
+[32m+[m[32mgitment:[m
+[32m+[m[32m  enable: false[m
+[32m+[m[32m  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway[m
+[32m+[m[32m  count: true # Show comments count in post meta area[m
+[32m+[m[32m  lazy: false # Comments lazy loading with a button[m
+[32m+[m[32m  cleanly: false # Hide 'Powered by ...' on footer, and more[m
+[32m+[m[32m  language: # Force language, or auto switch by theme[m
+[32m+[m[32m  github_user: # MUST HAVE, Your Github ID[m
+[32m+[m[32m  github_repo: # MUST HAVE, The repo you use to store Gitment comments[m
+[32m+[m[32m  client_id: # MUST HAVE, Github client id for the Gitment[m
+[32m+[m[32m  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment[m
+[32m+[m[32m  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect[m
+[32m+[m[32m  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled[m
+[32m+[m
+ # Baidu Share[m
+ # Available value:[m
+ #    button | slide[m
+[36m@@ -341,19 +422,54 @@[m [mchangyan:[m
+ ##  type: button[m
+ [m
+ # Share[m
+[31m-#jiathis:[m
+[32m+[m[32m# This plugin is more useful in China, make sure you known how to use it.[m
+[32m+[m[32m# And you can find the use guide at official webiste: http://www.jiathis.com/.[m
+ # Warning: JiaThis does not support https.[m
+[32m+[m[32m#jiathis:[m
+[32m+[m[32m  ##uid: Get this uid from http://www.jiathis.com/[m
+ #add_this_id:[m
+ [m
+ # Share[m
+ #duoshuo_share: true[m
+ [m
+[32m+[m[32m# NeedMoreShare2[m
+[32m+[m[32m# This plugin is a pure javascript sharing lib which is useful in China.[m
+[32m+[m[32m# See: https://github.com/revir/need-more-share2[m
+[32m+[m[32m# Also see: https://github.com/DzmVasileusky/needShareButton[m
+[32m+[m[32m# iconStyle: default | box[m
+[32m+[m[32m# boxForm: horizontal | vertical[m
+[32m+[m[32m# position: top / middle / bottom + Left / Center / Right[m
+[32m+[m[32m# networks: Weibo,Wechat,Douban,QQZone,Twitter,Linkedin,Mailto,Reddit,[m
+[32m+[m[32m#           Delicious,StumbleUpon,Pinterest,Facebook,GooglePlus,Slashdot,[m
+[32m+[m[32m#           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,[m
+[32m+[m[32m#           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru[m
+[32m+[m[32mneedmoreshare2:[m
+[32m+[m[32m  enable: false[m
+[32m+[m[32m  postbottom:[m
+[32m+[m[32m    enable: false[m
+[32m+[m[32m    options:[m
+[32m+[m[32m      iconStyle: box[m
+[32m+[m[32m      boxForm: horizontal[m
+[32m+[m[32m      position: bottomCenter[m
+[32m+[m[32m      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook[m
+[32m+[m[32m  float:[m
+[32m+[m[32m    enable: false[m
+[32m+[m[32m    options:[m
+[32m+[m[32m      iconStyle: box[m
+[32m+[m[32m      boxForm: horizontal[m
+[32m+[m[32m      position: middleRight[m
+[32m+[m[32m      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook[m
+[32m+[m
+ # Google Webmaster tools verification setting[m
+ # See: https://www.google.com/webmasters/[m
+ #google_site_verification:[m
+ [m
+ # Google Analytics[m
+[31m-google_analytics: UA-107335944-1[m
+[32m+[m[32m#google_analytics:[m
+[32m+[m
+[32m+[m[32m# Bing Webmaster tools verification setting[m
+[32m+[m[32m# See: https://www.bing.com/webmaster/[m
+[32m+[m[32m#bing_site_verification:[m
+ [m
+ # Yandex Webmaster tools verification setting[m
+ # See: https://webmaster.yandex.ru/[m
+[36m@@ -375,11 +491,12 @@[m [mduoshuo_info:[m
+   user_id: 0[m
+   #admin_nickname: Author[m
+ [m
+[31m-[m
+[32m+[m[32m# Post widgets & FB/VK comments settings.[m
+[32m+[m[32m# ---------------------------------------------------------------[m
+ # Facebook SDK Support.[m
+ # https://github.com/iissnan/hexo-theme-next/pull/410[m
+ facebook_sdk:[m
+[31m-  enable: false[m
+[32m+[m[32m  enable:       false[m
+   app_id:       #<app_id>[m
+   fb_admin:     #<user_id>[m
+   like_button:  #true[m
+[36m@@ -389,15 +506,15 @@[m [mfacebook_sdk:[m
+ # This plugin depends on Facebook SDK.[m
+ # If facebook_sdk.enable is false, Facebook comments plugin is unavailable.[m
+ facebook_comments_plugin:[m
+[31m-  enable: false[m
+[31m-  num_of_posts: 10  # min posts num is 1[m
+[31m-  width: 100%       # default width is 550px[m
+[31m-  scheme: light     # default scheme is light (light or dark)[m
+[32m+[m[32m  enable:       false[m
+[32m+[m[32m  num_of_posts: 10    # min posts num is 1[m
+[32m+[m[32m  width:        100%  # default width is 550px[m
+[32m+[m[32m  scheme:       light # default scheme is light (light or dark)[m
+ [m
+ # VKontakte API Support.[m
+ # To get your AppID visit https://vk.com/editapp?act=create[m
+ vkontakte_api:[m
+[31m-  enable: false[m
+[32m+[m[32m  enable:       false[m
+   app_id:       #<app_id>[m
+   like:         true[m
+   comments:     true[m
+[36m@@ -405,11 +522,11 @@[m [mvkontakte_api:[m
+ [m
+ # Star rating support to each article.[m
+ # To get your ID visit https://widgetpack.com[m
+[31m-rating: [m
+[32m+[m[32mrating:[m
+   enable: false[m
+   id:     #<app_id>[m
+   color:  fc6423[m
+[31m-  [m
+[32m+[m[32m# ---------------------------------------------------------------[m
+ [m
+ # Show number of visitors to each article.[m
+ # You can visit https://leancloud.cn get AppID and AppKey.[m
+[36m@@ -418,23 +535,33 @@[m [mleancloud_visitors:[m
+   app_id: #<app_id>[m
+   app_key: #<app_key>[m
+ [m
+[32m+[m[32m# Another tool to show number of visitors to each article.[m
+[32m+[m[32m# visit https://console.firebase.google.com/u/0/ to get apiKey and projectId[m
+[32m+[m[32m# visit https://firebase.google.com/docs/firestore/ to get more information about firestore[m
+[32m+[m[32mfirestore:[m
+[32m+[m[32m  enable: false[m
+[32m+[m[32m  collection: articles #required, a string collection name to access firestore database[m
+[32m+[m[32m  apiKey: #required[m
+[32m+[m[32m  projectId: #required[m
+[32m+[m[32m  bluebird: false #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill[m
+[32m+[m
+ # Show PV/UV of the website/page with busuanzi.[m
+ # Get more information on http://ibruce.info/2015/04/04/busuanzi/[m
+ busuanzi_count:[m
+   # count values only if the other configs are false[m
+[31m-  enable: true[m
+[32m+[m[32m  enable: false[m
+   # custom uv span for the whole site[m
+   site_uv: true[m
+[31m-  site_uv_header: <i class="fa fa-user">本站访客数</i>[m
+[31m-  site_uv_footer: 人次[m
+[32m+[m[32m  site_uv_header: <i class="fa fa-user"></i>[m
+[32m+[m[32m  site_uv_footer:[m
+   # custom pv span for the whole site[m
+   site_pv: true[m
+[31m-  site_pv_header: <i class="fa fa-eye">本站总访问量</i>[m
+[31m-  site_pv_footer: 次[m
+[32m+[m[32m  site_pv_header: <i class="fa fa-eye"></i>[m
+[32m+[m[32m  site_pv_footer:[m
+   # custom pv span for one page only[m
+   page_pv: true[m
+[31m-  page_pv_header: <i class="fa fa-file-o">本文总阅读量</i>[m
+[31m-  page_pv_footer: 次[m
+[32m+[m[32m  page_pv_header: <i class="fa fa-file-o"></i>[m
+[32m+[m[32m  page_pv_footer:[m
+ [m
+ [m
+ # Tencent analytics ID[m
+[36m@@ -474,8 +601,8 @@[m [malgolia_search:[m
+     hits_empty: "We didn't find any results for the search: ${query}"[m
+     hits_stats: "${hits} results found in ${time} ms"[m
+ [m
+[31m-[m
+ # Local search[m
+[32m+[m[32m# Dependencies: https://github.com/flashlab/hexo-generator-search[m
+ local_search:[m
+   enable: false[m
+   # if auto, trigger search by changing input[m
+[36m@@ -484,19 +611,65 @@[m [mlocal_search:[m
+   # show top n results per article, show all results by setting to -1[m
+   top_n_per_article: 1[m
+ [m
+[31m-# External URL with BASE64 encrypt & decrypt[m
+[32m+[m
+[32m+[m[32m# ---------------------------------------------------------------[m
+[32m+[m[32m# Tags Settings[m
+[32m+[m[32m# ---------------------------------------------------------------[m
+[32m+[m
+[32m+[m[32m# External URL with BASE64 encrypt & decrypt.[m
+ # Usage: {% exturl text url "title" %}[m
+ # Alias: {% extlink text url "title" %}[m
+ exturl: false[m
+ [m
+[32m+[m[32m# Note tag (bs-callout).[m
+[32m+[m[32mnote:[m
+[32m+[m[32m  # Note tag style values:[m
+[32m+[m[32m  #  - simple    bs-callout old alert style. Default.[m
+[32m+[m[32m  #  - modern    bs-callout new (v2-v3) alert style.[m
+[32m+[m[32m  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.[m
+[32m+[m[32m  #  - disabled  disable all CSS styles import of note tag.[m
+[32m+[m[32m  style: simple[m
+[32m+[m[32m  icons: false[m
+[32m+[m[32m  border_radius: 3[m
+[32m+[m[32m  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).[m
+[32m+[m[32m  # Offset also applied to label tag variables. This option can work with disabled note tag.[m
+[32m+[m[32m  light_bg_offset: 0[m
+[32m+[m
+[32m+[m[32m# Label tag.[m
+[32m+[m[32mlabel: true[m
+[32m+[m
+[32m+[m[32m# Tabs tag.[m
+[32m+[m[32mtabs:[m
+[32m+[m[32m  enable: true[m
+[32m+[m[32m  transition:[m
+[32m+[m[32m    tabs: false[m
+[32m+[m[32m    labels: true[m
+[32m+[m[32m  border_radius: 0[m
+[32m+[m
+ [m
+ #! ---------------------------------------------------------------[m
+ #! DO NOT EDIT THE FOLLOWING SETTINGS[m
+ #! UNLESS YOU KNOW WHAT YOU ARE DOING[m
+ #! ---------------------------------------------------------------[m
+ [m
+[31m-# Motion[m
+[31m-use_motion: true[m
+[32m+[m[32m# Use velocity to animate everything.[m
+[32m+[m[32mmotion:[m
+[32m+[m[32m  enable: true[m
+[32m+[m[32m  async: false[m
+[32m+[m[32m  transition:[m
+[32m+[m[32m    # Transition variants:[m
+[32m+[m[32m    # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut[m
+[32m+[m[32m    # swoopIn | swoopOut | whirlIn | whirlOut | shrinkIn | shrinkOut | expandIn | expandOut[m
+[32m+[m[32m    # bounceIn | bounceOut | bounceUpIn | bounceUpOut | bounceDownIn | bounceDownOut | bounceLeftIn | bounceLeftOut | bounceRightIn | bounceRightOut[m
+[32m+[m[32m    # slideUpIn | slideUpOut | slideDownIn | slideDownOut | slideLeftIn | slideLeftOut | slideRightIn | slideRightOut[m
+[32m+[m[32m    # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut[m
+[32m+[m[32m    # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut[m
+[32m+[m[32m    post_block: fadeIn[m
+[32m+[m[32m    post_header: slideDownIn[m
+[32m+[m[32m    post_body: slideDownIn[m
+[32m+[m[32m    coll_header: slideLeftIn[m
+[32m+[m[32m    # Only for Pisces | Gemini.[m
+[32m+[m[32m    sidebar: slideUpIn[m
+ [m
+ # Fancybox[m
+ fancybox: true[m
+[36m@@ -519,10 +692,10 @@[m [mpace: false[m
+ #pace-theme-minimal[m
+ # For example[m
+ # pace_theme: pace-theme-center-simple[m
+[31m-pace_theme: pace-theme-mac-osx[m
+[32m+[m[32mpace_theme: pace-theme-minimal[m
+ [m
+ # Canvas-nest[m
+[31m-canvas_nest: true[m
+[32m+[m[32mcanvas_nest: false[m
+ [m
+ # three_waves[m
+ three_waves: false[m
+[36m@@ -535,7 +708,14 @@[m [mcanvas_sphere: false[m
+ [m
+ # Only fit scheme Pisces[m
+ # Canvas-ribbon[m
+[31m-canvas_ribbon: false[m
+[32m+[m[32m# size: The width of the ribbon.[m
+[32m+[m[32m# alpha: The transparency of the ribbon.[m
+[32m+[m[32m# zIndex: The display level of the ribbon.[m
+[32m+[m[32mcanvas_ribbon:[m
+[32m+[m[32m  enable: false[m
+[32m+[m[32m  size: 300[m
+[32m+[m[32m  alpha: 0.6[m
+[32m+[m[32m  zIndex: -1[m
+ [m
+ # Script Vendors.[m
+ # Set a CDN address for the vendor you want to customize.[m
+[36m@@ -619,6 +799,10 @@[m [mvendors:[m
+   # https://github.com/ethantw/Han[m
+   han:[m
+ [m
+[32m+[m[32m  # needMoreShare2[m
+[32m+[m[32m  # https://github.com/revir/need-more-share2[m
+[32m+[m[32m  needMoreShare2:[m
+[32m+[m
+ [m
+ # Assets[m
+ css: css[m
+[36m@@ -626,4 +810,4 @@[m [mjs: js[m
+ images: images[m
+ [m
+ # Theme version[m
+[31m-version: 5.1.1[m
+[32m+[m[32mversion: 5.1.4[m
