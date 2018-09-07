@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>stskyblade&#39;s blog</title>
+  
+  <subtitle>Will is everything.</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-09-07T14:36:59.629Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>stskyblade</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/09/07/hello-world/"/>
+    <id>http://yoursite.com/2018/09/07/hello-world/</id>
+    <published>2018-09-07T14:36:59.629Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Weekly Summary[1]</title>
+    <link href="http://yoursite.com/2017/10/22/weekly-summary-1/"/>
+    <id>http://yoursite.com/2017/10/22/weekly-summary-1/</id>
+    <published>2017-10-22T08:31:02.000Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<p>10月5号到21号的工作总结</p><a id="more"></a><h3 id="工作梳理"><a href="#工作梳理" class="headerlink" title="工作梳理"></a>工作梳理</h3><p>到17号为止，都在继续完成物流报价的应用：</p><ul><li>5，设计下单数据库；加入modal框</li><li>6，接受公司技术栈的培训</li><li>7，将部分逻辑转到云函数</li><li>8，细节收尾；界面美化</li><li>9，前端重构；加入modal</li><li>10，查询界面手机优化；查看订单的列表页</li><li>11，完成订单详情页；用新的api重写外键</li><li>12，把选项加入到数据库中；筛选列表页；查询的历史记录</li><li>13，接入支付；测试bug</li><li>14，支付流程优化；接入云函数；修改订单状态界面；过时取消支付</li><li>15，休息</li><li>16，加入进度条；查看bug；代码整理拆分</li><li>17，订单修改记录；详情页拆成组件</li><li>18，收尾</li></ul><p>19号开始做新的应用程序，兼容云服务器和装修报价的计算器</p><ul><li>19，测试现有逻辑</li><li>20，简易的查询界面</li><li>21，将工具中组建的显示逻辑加入到数据库，并测试</li></ul><h3 id="经验总结"><a href="#经验总结" class="headerlink" title="经验总结"></a>经验总结</h3><ul><li>数据库中不光能存放数据，还可以存放逻辑。本质上储存的是字节流，则一切字节流（即计算机中的所有对象）都可以储存在数据库中</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;10月5号到21号的工作总结&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://yoursite.com/categories/diary/"/>
+    
+      <category term="Weekly Summary" scheme="http://yoursite.com/categories/diary/weekly-summary/"/>
+    
+    
+      <category term="Weekly Summary" scheme="http://yoursite.com/tags/weekly-summary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Weekly Summary[0]</title>
+    <link href="http://yoursite.com/2017/10/02/weekly-summary-0/"/>
+    <id>http://yoursite.com/2017/10/02/weekly-summary-0/</id>
+    <published>2017-10-02T06:58:19.000Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<p>9月19日进入现在的公司实习，到今天已经两个星期了。平时工作比较忙，总结放到今天才动笔。<br>本系列的目的在于：                                         </p><ul><li>梳理一下一周来所做的工作                                   </li><li>对还存在的问题进行收尾                                    </li><li>总结未来可能需要复用的代码，进行优化                       </li><li>调整短期的发展路线</li></ul><a id="more"></a><h3 id="工作梳理"><a href="#工作梳理" class="headerlink" title="工作梳理"></a>工作梳理</h3><p>19号到22号主要是在搭建和熟悉环境，主要涉及以下技术：</p><ul><li>postgresql</li><li>pip</li><li>nginx</li><li>redis</li><li>npm</li><li>AngularJS</li><li>Vue</li></ul><p>23号到30号在独立开发一个物流报价的应用，商家可以输入运费规则，用户输入信息查询报价信息，下面是开发过程：</p><ul><li>23，研究逻辑；测试工具；涉及数据库</li><li>24，休息</li><li>25，研究运费规则；使用表单对规则进行CRUD操作，主要实现了重量规则</li><li>26，使用Vue实现了地区选择；研究体积规则</li><li>27，添加查询记录；美化前台界面（主要用到flexbox）</li><li>28, 完成体积规则，送货费；css属性使用控件调节；美化界面（主要是适配手机端）</li><li>29，规则冲突检验；用select重写地区选择；管理数据库权限；查询记录添加字段</li><li>30，美化界面（主要使用Bootstrap中的grid对整个界面进行重构）</li></ul><h3 id="经验总结"><a href="#经验总结" class="headerlink" title="经验总结"></a>经验总结</h3><ul><li>欠缺的主要是前端，在写前端之前一定要进行良好的布局，重构太蛋疼了</li><li>抽象出地区选择</li></ul><h3 id="短期路线"><a href="#短期路线" class="headerlink" title="短期路线"></a>短期路线</h3><ul><li>熟悉封装好的前端接口，modal和router</li><li>用云函数重写前端的逻辑</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;9月19日进入现在的公司实习，到今天已经两个星期了。平时工作比较忙，总结放到今天才动笔。&lt;br&gt;本系列的目的在于：                                         &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;梳理一下一周来所做的工作                                   &lt;/li&gt;
+&lt;li&gt;对还存在的问题进行收尾                                    &lt;/li&gt;
+&lt;li&gt;总结未来可能需要复用的代码，进行优化                       &lt;/li&gt;
+&lt;li&gt;调整短期的发展路线&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://yoursite.com/categories/diary/"/>
+    
+      <category term="Weekly Summary" scheme="http://yoursite.com/categories/diary/weekly-summary/"/>
+    
+    
+      <category term="Weekly Summary" scheme="http://yoursite.com/tags/weekly-summary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Final_preparing_works</title>
+    <link href="http://yoursite.com/2017/05/16/Final-preparing-works/"/>
+    <id>http://yoursite.com/2017/05/16/Final-preparing-works/</id>
+    <published>2017-05-16T00:38:04.000Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<p>In order to find a nice job, I must finish those works.<br><a id="more"></a><br>Dead line– Jun,15</p><ul><li>Flask web development</li><li>Read Flask’s source code</li><li>Write a blog project</li><li>Write a resume</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In order to find a nice job, I must finish those works.&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>After ECS</title>
+    <link href="http://yoursite.com/2017/03/23/After-ECS/"/>
+    <id>http://yoursite.com/2017/03/23/After-ECS/</id>
+    <published>2017-03-23T07:20:36.000Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<p>After almost finishing ECS, I write this article, in order to make a summary of this intersting book and my hard work.<br><a id="more"></a></p><h3 id="What-did-I-do"><a href="#What-did-I-do" class="headerlink" title="What did I do?"></a>What did I do?</h3><ul><li>Use logic gates (such as AND, OR, NOT) to make a computer.</li><li>Write a compiler to translate JACK to VM-language, and then to Assambly language.</li></ul><h3 id="What-haven’t-I-done"><a href="#What-haven’t-I-done" class="headerlink" title="What haven’t I done?"></a>What haven’t I done?</h3><ul><li>Write operating system.</li></ul><h3 id="How-do-I-feel"><a href="#How-do-I-feel" class="headerlink" title="How do I feel?"></a>How do I feel?</h3><ul><li>Hardware can only do something very simple– add. In fact, it don’t computer numbers, but we find a chip– Adder, and it represent add operation just right.</li><li>Hardware and software do the same thing at the smallest perspective. And different languages make no difference at low level.</li><li>Coding means to showing somebody how do you think, and then telling computer to do something right.</li></ul><h3 id="What-have-I-learn-about-code"><a href="#What-have-I-learn-about-code" class="headerlink" title="What have I learn about code?"></a>What have I learn about code?</h3><ul><li>use more comments to help understanding.</li><li>use function to package statements.</li><li>use temp variable or flag( true, false) to do something later.</li><li>Object can share data, and is easy for managing.</li><li>make good use of recursion.</li></ul><h3 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to:"></a>Thanks to:</h3><ul><li><a href="http://blog.csdn.net/thomas_in_june/article/details/39344965" target="_blank" rel="noopener">http://blog.csdn.net/thomas_in_june/article/details/39344965</a></li><li><a href="http://wenbenbijiao.renrensousuo.com/#diff" target="_blank" rel="noopener">http://wenbenbijiao.renrensousuo.com/#diff</a></li><li>And ECS’s writers!</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;After almost finishing ECS, I write this article, in order to make a summary of this intersting book and my hard work.&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Summary of 2016</title>
+    <link href="http://yoursite.com/2017/02/11/2016-summary/"/>
+    <id>http://yoursite.com/2017/02/11/2016-summary/</id>
+    <published>2017-02-11T06:28:16.000Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<p>In the past 2016, I done something not efficiently.    I can do better in 2017.<br><a id="more"></a><br>I start learning code one year ago. I learn python at first, but didnot achieved it eventually. I was trying to find a way to success step by step. I have learn about <sicp>, <the elements="" of="" computer="" system=""> and some others. However, I didnot complete anyone at all.<br>Maybe everyone has there own way. </the></sicp></p><ul><li>Flase web development</li><li>Python web development</li><li><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="noopener">http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000</a></li><li><a href="http://flask.pocoo.org/docs/0.12/" target="_blank" rel="noopener">http://flask.pocoo.org/docs/0.12/</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In the past 2016, I done something not efficiently.    I can do better in 2017.&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SICP_complete</title>
+    <link href="http://yoursite.com/2017/01/21/SICP-complete/"/>
+    <id>http://yoursite.com/2017/01/21/SICP-complete/</id>
+    <published>2017-01-21T07:22:49.000Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<p>SICP暂时告一段落。勉强算是完成前三章，后两章不准备继续。<br><a id="more"></a></p><p>如释重负。</p><h3 id="收获："><a href="#收获：" class="headerlink" title="收获："></a>收获：</h3><ul><li>抽象，代码复用</li><li>隔离，代码黑盒</li></ul><h3 id="下一步："><a href="#下一步：" class="headerlink" title="下一步："></a>下一步：</h3><ul><li>html，css，javascript。以FreeCodeCamp为主。</li><li>了解数据结构和算法。</li><li>CS50。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SICP暂时告一段落。勉强算是完成前三章，后两章不准备继续。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="编程入门" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Rsp_01_vnc</title>
+    <link href="http://yoursite.com/2017/01/16/Rsp-01/"/>
+    <id>http://yoursite.com/2017/01/16/Rsp-01/</id>
+    <published>2017-01-16T11:33:47.000Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<p>树莓派的常用功能配置：</p><ul><li>Vnc viewer</li><li>Vsftpd</li></ul><a id="more"></a><h3 id="1-Vnc-viewer"><a href="#1-Vnc-viewer" class="headerlink" title="1. Vnc viewer"></a>1. Vnc viewer</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install tightvncviewer</span><br><span class="line">$ tightvncserver</span><br><span class="line">$ vncserver :1 -geometry 800x600 -depth 24</span><br></pre></td></tr></table></figure><h3 id="2-Vsftpd"><a href="#2-Vsftpd" class="headerlink" title="2. Vsftpd"></a>2. Vsftpd</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install vsftpd</span><br><span class="line">$ sudo service vsftpd start</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;树莓派的常用功能配置：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vnc viewer&lt;/li&gt;
+&lt;li&gt;Vsftpd&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Raspberry" scheme="http://yoursite.com/tags/raspberry/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新的开始</title>
+    <link href="http://yoursite.com/2016/12/19/new-future/"/>
+    <id>http://yoursite.com/2016/12/19/new-future/</id>
+    <published>2016-12-19T07:42:41.000Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<p>《SICP》和《计算机系统要素》几次捡起，又半途而废。我只希望，下一次捡起它们的时候，我已经做好了万全的准备，万全的一蹴而就的准备。<br><a id="more"></a></p><h3 id="总结一下放弃的原因："><a href="#总结一下放弃的原因：" class="headerlink" title="总结一下放弃的原因："></a>总结一下放弃的原因：</h3><ul><li>题目有难度，还是跳跃式的。虽然萧井陌在《编程入门指南》中要求量力而行，但有题目跳过总感觉不好。不会做的跳过，那会做的要不要跳呢？跳着跳着，就习惯了，就放弃了。</li><li>没有意思，没有成就感。</li><li>怀疑未来。不知道以后能不能用上。一直扛着实用主义的大旗，也许太过急功近利了。</li></ul><h3 id="目前计划："><a href="#目前计划：" class="headerlink" title="目前计划："></a>目前计划：</h3><ul><li>先学PHP</li><li>做一个博客，找成就感</li><li>回头补上基础</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;《SICP》和《计算机系统要素》几次捡起，又半途而废。我只希望，下一次捡起它们的时候，我已经做好了万全的准备，万全的一蹴而就的准备。&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>My Blog</title>
+    <link href="http://yoursite.com/2016/11/06/my-blog-powered-by-Flask/"/>
+    <id>http://yoursite.com/2016/11/06/my-blog-powered-by-Flask/</id>
+    <published>2016-11-06T08:37:55.000Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Targets"><a href="#Targets" class="headerlink" title="Targets:"></a>Targets:</h3><ul><li>have my own blog website,which supports with comments and Google Analytics</li><li>interface similar to HEXO<a id="more"></a></li></ul><h3 id="1-Server-setting"><a href="#1-Server-setting" class="headerlink" title="1.Server setting"></a>1.Server setting</h3><ul><li><p>1.change root password</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ passwd</span><br></pre></td></tr></table></figure></li><li><p>2.add account</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ adduser will</span><br><span class="line">$ passwd will</span><br><span class="line">$ visudo</span><br><span class="line">add willALL=(ALL)ALL</span><br></pre></td></tr></table></figure></li><li><p>3.disable root login by ssh</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ vi /etc/ssh/sshd_config</span><br><span class="line">$ systemctl restart sshd.service</span><br></pre></td></tr></table></figure></li><li><p>4.setup firewalld</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ yum install firewalld</span><br><span class="line">$ systemctl start firewalld</span><br></pre></td></tr></table></figure></li><li><p>5.use ssh key to login</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br><span class="line">$ cat .ssh/id_rsa.pub &gt;&gt; .ssh/authorized_keys</span><br><span class="line">$ cat id_rsa.pub &gt;&gt; .ssh/authorized_keys</span><br><span class="line">$ chmod 700 .ssh/</span><br><span class="line">$ chmod 600 .ssh/authorized_keys</span><br></pre></td></tr></table></figure></li><li><p>6.disable password login</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure></li></ul><h3 id="2-LNMP-setting"><a href="#2-LNMP-setting" class="headerlink" title="2.LNMP setting"></a>2.LNMP setting</h3><ul><li><p>1.install Nginx</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ yum install Nginx</span><br><span class="line">$ systemctl start nginx</span><br><span class="line">$ systemctl <span class="built_in">enable</span> nginx</span><br></pre></td></tr></table></figure></li><li><p>2.install MariaDB</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ yum install mariadb-server</span><br><span class="line">$ systemctl start mariadb</span><br><span class="line">$ systemctl <span class="built_in">enable</span> mariadb</span><br><span class="line">$ /usr/bin/mysql_secure_installation</span><br></pre></td></tr></table></figure></li><li><p>3.install PHP5</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$ yum install php-fpm php-mysql</span><br><span class="line">$ systemctl start php-fpm</span><br><span class="line">$ systemctl <span class="built_in">enable</span> php-fpm</span><br><span class="line">$ mkdir /var/lib/php/session/</span><br><span class="line">$ chown -R apache:apache /var/lib/php/session/</span><br><span class="line">$ nano /etc/nginx/nginx.conf</span><br><span class="line"><span class="comment"># location ~ \.php$ &#123;</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># 　　root           path;   </span></span><br><span class="line"><span class="comment"># 　　fastcgi_pass　　127.0.0.1:9000;           </span></span><br><span class="line"><span class="comment"># 　　fastcgi_index　  index.php;            </span></span><br><span class="line"><span class="comment"># 　　fastcgi_param　SCRIPT_FILENAME  $document_root/$fastcgi_script_name;            </span></span><br><span class="line"><span class="comment"># 　　include       　　  fastcgi_params;        </span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># &#125;</span></span><br><span class="line">$ systemctl reload nginx</span><br></pre></td></tr></table></figure></li><li><p>4.install vsftpd</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ yum install vsftpd</span><br><span class="line">$ systemctl start vsftpd.service</span><br><span class="line">$ systemctl <span class="built_in">enable</span> vsftpd.service</span><br><span class="line">$ usermod -a -G nginx username</span><br><span class="line">$ chown -R :nginx path</span><br><span class="line">$ chmod -R g+rw path</span><br></pre></td></tr></table></figure></li><li><p>5.install phpmyadmin</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">continue</span></span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Targets&quot;&gt;&lt;a href=&quot;#Targets&quot; class=&quot;headerlink&quot; title=&quot;Targets:&quot;&gt;&lt;/a&gt;Targets:&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;have my own blog website,which supports with comments and Google Analytics&lt;/li&gt;
+&lt;li&gt;interface similar to HEXO
+    
+    </summary>
+    
+    
+      <category term="服务器配置" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>欢迎来到丛林</title>
+    <link href="http://yoursite.com/2016/10/09/into-the-wild/"/>
+    <id>http://yoursite.com/2016/10/09/into-the-wild/</id>
+    <published>2016-10-09T11:43:09.000Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>里高雷无所谓地耸了耸肩，过了一会，他似乎感觉到有些无聊，轻轻地哼唱起来：</p></blockquote><blockquote><p>   欢迎来到丛林！<br>   我们正有有趣的游戏……</p></blockquote><p>————节选自 烟雨江南《狩魔手记》<br><a id="more"></a><br>学业即将结束，姑且借用采铜在《精进》中所说：“欢迎从游乐园模式进入荒野求生模式！”。</p><p>以前，很向往荒野。</p><p>在荒野中取材，生存，是多有意思的事啊！好像自己就能独立的活着，离开任何人也没有关系，如同风筝斩断了线。可以正大光明地跟别人说不，你的东西再好我也不要。我自己就能做，也能活着。</p><p>如同，苏在《狩魔手记》中一样。独身，独行。游走于光暗之间，更多的还是暗，敌明我暗的‘暗’。精心策划，快意恩仇。与天斗，与地斗，与人斗。这里的‘人’，是作为动物的人，最多也只是作为一群动物的人。不会是一个家族的人，一个组织的人，背后有人的人。</p><p>存在于天地之间，而不是某个机器上的某个齿轮，脱离了别的齿轮什么都不行。野生的超级战士。</p><p>后来，心就淡了。离开了别人确实什么都做不了。</p><p>但进入荒野总归还是好事，起码自由度能高上很多，再也没有按部就班的路。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;里高雷无所谓地耸了耸肩，过了一会，他似乎感觉到有些无聊，轻轻地哼唱起来：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;   欢迎来到丛林！&lt;br&gt;   我们正有有趣的游戏……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;————节选自 烟雨江南《狩魔手记》&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>英语发展规划</title>
+    <link href="http://yoursite.com/2016/09/27/input-method-development-plan/"/>
+    <id>http://yoursite.com/2016/09/27/input-method-development-plan/</id>
+    <published>2016-09-27T11:57:41.000Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<p>英语是一种很重要的输入方式：</p><ul><li>计算机领域有很多优质英语资料</li><li>娱乐方面有很多英语大片</li><li>与很多其他外语相通（待定）</li></ul><a id="more"></a><h2 id="Update-at-20160927"><a href="#Update-at-20160927" class="headerlink" title="Update at 20160927"></a>Update at 20160927</h2><h3 id="目标：攻克英文发音（三周三遍，一遍7h）"><a href="#目标：攻克英文发音（三周三遍，一遍7h）" class="headerlink" title="目标：攻克英文发音（三周三遍，一遍7h）"></a>目标：攻克英文发音（三周三遍，一遍7h）</h3><h3 id="材料：赖世雄美语音标"><a href="#材料：赖世雄美语音标" class="headerlink" title="材料：赖世雄美语音标"></a>材料：赖世雄美语音标</h3><h3 id="方式：跟读，一天1h"><a href="#方式：跟读，一天1h" class="headerlink" title="方式：跟读，一天1h"></a>方式：跟读，一天1h</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;英语是一种很重要的输入方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;计算机领域有很多优质英语资料&lt;/li&gt;
+&lt;li&gt;娱乐方面有很多英语大片&lt;/li&gt;
+&lt;li&gt;与很多其他外语相通（待定）&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>第一序列机器发展规划</title>
+    <link href="http://yoursite.com/2016/09/14/body-development-plan/"/>
+    <id>http://yoursite.com/2016/09/14/body-development-plan/</id>
+    <published>2016-09-14T13:01:10.000Z</published>
+    <updated>2018-09-07T14:36:59.629Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>封余冷冷回答道：“但你不要忘了，人类无论发展到什么程度，终究还是生物的人类，你还在这个躯壳里。这个躯壳才是你保命的最后手段，是你必须了若指掌，运转无碍的第一序列机器。”</p></blockquote><p>————节选自 猫腻《间客》<br><a id="more"></a></p><h2 id="Update-at-20160914"><a href="#Update-at-20160914" class="headerlink" title="Update at 20160914"></a>Update at 20160914</h2><h3 id="目标：健康"><a href="#目标：健康" class="headerlink" title="目标：健康"></a>目标：健康</h3><h3 id="行动："><a href="#行动：" class="headerlink" title="行动："></a>行动：</h3><ul><li><p>饮食</p><ul><li>一杯奶</li><li>一个鸡蛋</li><li>一个水果</li><li>适量坚果</li><li>低油盐</li></ul></li><li><p>作息</p><ul><li>三餐时间： 六点半，十二点半，六点半</li><li>起床时间： 5：53</li><li>睡觉时间： 21：23</li></ul></li><li><p>运动</p><ul><li>19：00 长跑/慢走</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;封余冷冷回答道：“但你不要忘了，人类无论发展到什么程度，终究还是生物的人类，你还在这个躯壳里。这个躯壳才是你保命的最后手段，是你必须了若指掌，运转无碍的第一序列机器。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;————节选自 猫腻《间客》&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
