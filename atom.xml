@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-16T14:46:28.173Z</updated>
+  <updated>2018-09-16T14:51:43.748Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>rsp_02_setup.md</title>
+    <title>Rsp_02_setup</title>
     <link href="http://yoursite.com/2018/09/16/rsp-02-setup-md/"/>
     <id>http://yoursite.com/2018/09/16/rsp-02-setup-md/</id>
     <published>2018-09-16T14:18:36.000Z</published>
-    <updated>2018-09-16T14:46:28.173Z</updated>
+    <updated>2018-09-16T14:51:43.748Z</updated>
     
     <content type="html"><![CDATA[<p>In this article, I’ll show you follow:</p><ul><li>write raspberry to sd card</li><li>set up wifi password headlessly(without cable or monitor)</li><li>enable ssh as default</li><li>set static ip</li></ul><a id="more"></a><h3 id="write-img-to-sd-card"><a href="#write-img-to-sd-card" class="headerlink" title="write .img to sd card"></a>write .img to sd card</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># in dd command, /dev/sdc is your sd card</span></span><br><span class="line"><span class="built_in">cd</span> ~/Downloads</span><br><span class="line">wget -c http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2018-06-29/2018-06-27-raspbian-stretch-lite.zip</span><br><span class="line">dd bs=4M <span class="keyword">if</span>=~/Downloads/2018-04-18-raspbian-stretch.img of=/dev/sdc conv=fsync</span><br></pre></td></tr></table></figure><h3 id="set-up-wifi"><a href="#set-up-wifi" class="headerlink" title="set up wifi"></a>set up wifi</h3><p>create a file named wpa_supplicant.conf in boot partition(/media/username/boot/wpa_supplicant.conf), which has content like this:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev</span><br><span class="line">update_config=1</span><br><span class="line">country=GB</span><br><span class="line"></span><br><span class="line">network=&#123;</span><br><span class="line">        ssid=&quot;Your wifi&quot;</span><br><span class="line">        psk=&quot;Your password&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="set-static-ip"><a href="#set-static-ip" class="headerlink" title="set static ip"></a>set static ip</h3><p>edit /media/username/rootfs/etc/dhcpcd.conf, add lines like follow:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">interface eth0</span><br><span class="line">static ip_address=192.169.1.64/24</span><br><span class="line">static routers=192.168.1.1</span><br><span class="line">static domain_name_servers=114.114.114.114</span><br><span class="line"></span><br><span class="line">interface wlan0</span><br><span class="line">static ip_address=192.168.1.65/24</span><br><span class="line">static routers=192.168.1.1</span><br><span class="line">static domain_name_servers=114.114.114.114</span><br></pre></td></tr></table></figure><h3 id="enable-ssh"><a href="#enable-ssh" class="headerlink" title="enable ssh"></a>enable ssh</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch /media/username/boot/ssh</span><br></pre></td></tr></table></figure><p>Above all.</p>]]></content>
     
