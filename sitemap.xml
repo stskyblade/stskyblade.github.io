@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2016/11/06/my-blog-powered-by-Flask/</loc>
+    <loc>http://yoursite.com/2018/09/16/rsp-02-setup-md/</loc>
     
-    <lastmod>2018-09-07T14:36:59.629Z</lastmod>
+    <lastmod>2018-09-16T14:46:28.173Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2017/02/11/2016-summary/</loc>
+    <loc>http://yoursite.com/2016/12/19/new-future/</loc>
     
     <lastmod>2018-09-07T14:36:59.629Z</lastmod>
     
@@ -44,14 +44,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/09/27/input-method-development-plan/</loc>
+    <loc>http://yoursite.com/2016/09/14/body-development-plan/</loc>
     
     <lastmod>2018-09-07T14:36:59.629Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/09/14/body-development-plan/</loc>
+    <loc>http://yoursite.com/2016/09/27/input-method-development-plan/</loc>
     
     <lastmod>2018-09-07T14:36:59.629Z</lastmod>
     
@@ -65,14 +65,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2017/03/23/After-ECS/</loc>
+    <loc>http://yoursite.com/2016/11/06/my-blog-powered-by-Flask/</loc>
     
     <lastmod>2018-09-07T14:36:59.629Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/12/19/new-future/</loc>
+    <loc>http://yoursite.com/2017/03/23/After-ECS/</loc>
     
     <lastmod>2018-09-07T14:36:59.629Z</lastmod>
     
@@ -87,6 +87,13 @@
   
   <url>
     <loc>http://yoursite.com/2017/10/22/weekly-summary-1/</loc>
+    
+    <lastmod>2018-09-07T14:36:59.629Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/02/11/2016-summary/</loc>
     
     <lastmod>2018-09-07T14:36:59.629Z</lastmod>
     
