@@ -1,6 +1,6 @@
 ---
 layout: post
-title: rsp_02_setup.md
+title: rsp_02_setup
 date: 2018-09-16 22:18:36
 tags:
 - Raspberry
